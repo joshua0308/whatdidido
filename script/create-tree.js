@@ -53,12 +53,12 @@ class Node {
 
     for (const line of lines) {
       if (
-        /(related to|part of|fixes).*https:\/\/github.com\/busbud\/[a-z-]*\/(pull|issues)\/[0-9]*/gi.test(
+        /(related to|part of|fixes).*https:\/\/github.com\/[a-z-]*\/[a-z-]*\/(pull|issues)\/[0-9]*/gi.test(
           line
         )
       ) {
         const matches = line.match(
-          /https:\/\/github.com\/busbud\/[a-z-]*\/(pull|issues)\/[0-9]*/gi
+          /https:\/\/github.com\/[a-z-]*\/[a-z-]*\/(pull|issues)\/[0-9]*/gi
         );
         for (const match of matches) {
           set.add(match);
@@ -77,12 +77,12 @@ class Node {
 
     for (const line of lines) {
       if (
-        /\[[\w\s]\].*https:\/\/github.com\/busbud\/[a-z-]*\/(pull|issues)\/[0-9]*/gi.test(
+        /\[[\w\s]\].*https:\/\/github.com\/[a-z-]*\/[a-z-]*\/(pull|issues)\/[0-9]*/gi.test(
           line
         )
       ) {
         const matches = line.match(
-          /https:\/\/github.com\/busbud\/[a-z-]*\/(pull|issues)\/[0-9]*/gi
+          /https:\/\/github.com\/[a-z-]*\/[a-z-]*\/(pull|issues)\/[0-9]*/gi
         );
         for (const match of matches) {
           set.add(match);
