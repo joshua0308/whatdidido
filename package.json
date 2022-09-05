@@ -1,0 +1,27 @@
+{
+  "name": "github-download",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "open src/index.html",
+    "create-tree": "node script/create-tree.js",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "yarn lint --fix",
+    "test:clean": "rm -rf test/snapshot.txt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/core": "^3.6.0",
+    "@octokit/plugin-paginate-rest": "^2.21.0"
+  },
+  "devDependencies": {
+    "eslint": "8.23.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "prettier": "2.7.1"
+  }
+}
