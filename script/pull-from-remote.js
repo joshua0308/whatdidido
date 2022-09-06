@@ -15,7 +15,7 @@ run()
 async function run() {
   const org = "org name";
   const repos = ["repo name"];
-  const githubAuth = "";
+  const githubAuth = process.env.GITHUB_API_TOKEN;
 
   const MyOctokit = Octokit.plugin(paginateRest);
   const octokit = new MyOctokit({ auth: githubAuth });
