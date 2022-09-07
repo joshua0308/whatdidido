@@ -53,7 +53,7 @@ class Node {
 
     for (const line of lines) {
       if (
-        /(related to|part of|fixes).*https:\/\/github.com\/[a-z-]*\/[a-z-]*\/(pull|issues)\/[0-9]*/gi.test(
+        /(depends on|dependent on|related to|part of|fixes|reverting).*https:\/\/github.com\/[a-z-]*\/[a-z-]*\/(pull|issues)\/[0-9]*/gi.test(
           line
         )
       ) {
